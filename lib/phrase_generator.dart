@@ -7,13 +7,16 @@ class PhraseGenerator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
+    return FlatButton(
+      padding: EdgeInsets.all(32),
+      shape: CircleBorder(),
       color: Colors.amber,
       onPressed: onPress,
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Text(
-          'Random Phrase',
+          'Random\nPhrase',
+          textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.black,
             fontSize: 24,
